@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        My Page
+    </title>
+    <!-- <style>
+        h2{
+            text-align: center;
+            color: darkblue;
+        }
+    </style> -->
+
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="logo" src="https://cdn-icons-png.flaticon.com/512/4436/4436481.png" alt="logo">
+    </div>
+
+    <img id= "Banner" src="banner-2.jpg" alt="Banner" height="240">
+    <h1>
+        About Jovia
+    </h1>
+    <!-- <h1 style="text-align: center;color: indigo;">
+        About Jovia
+    </h1> -->
+    
+    <div id="about">
+        <div id="description">
+            <p style="margin-top: 0;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam et asperiores doloremque laboriosam fugit
+                facere, alias at ipsa quasi perferendis <b>praesentium nesciunt</b> in <i>I Tag</i> <u>U tag</u> <strong>Strong
+                    tag</strong> <em>Emphasis text tag</em> ipsum velit quos distinctio.</p>
+            <p>
+                We also offer 2 industry - focused bootcamps
+            <ol>
+                <li>
+                    <a href="https://www.google.com/" target="_blank">
+                        Jovian Full Stack Developer Bootcamp
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.codechef.com/dashboard" target="_blank">
+                        Jovian Data Science Bootcamp
+                    </a>
+                </li>
+            </ol>
+            </p>
+        </div>
+        <div id="team">
+            <img id="team-image" src="career.jpg" alt="Career">
+            
+        </div>
+    </div>
+
+
+    <h2>Job Opportunities</h2> 
+    <div id="jobs">
+        <table id="jobs-table">
+            <tr class="job-header-row">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted on</th>
+            </tr>
+            <tr class="job-header-row">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr class="job-data-row">
+                <td>Frontend Developer</td>
+                <td>Bengaluru </td>
+                <td>India</td>
+                <td>₹12,00,000</td>
+                <td>Mar 3, 2023</td>
+            </tr>
+            <tr class="job-data-row">
+                <td>Full stack Developer</td>
+                <td>New Delhi</td>
+                <td>India</td>
+                <td>₹15,00,000</td>
+                <td>Feb 1, 2023</td>
+            </tr>
+            <tr class="job-data-row">
+                <td>Data Scientist</td>
+                <td>San Francisco</td>
+                <td>USA</td>
+                <td>$175,000</td>
+                <td>Dec 22, 2022</td>
+            </tr>
+            <tr class="job-data-row">
+                <td>Machine learning Engineer</td>
+                <td>Remote</td>
+                <td></td>
+                <td>$80,000</td>
+                <td>Sep 19, 2022</td>
+            </tr>
+        </table>
+
+        <!-- <div>
+            <a href="mailto:chauhanp2905@gmail.com?subject=Frontend" class = "apply" target="_blank">Apply</a>
+            <h3 class="job-role">Frontend Developer</h3>
+            <div class="location">Bengaluru, India</div>
+        </div>
+        <div>
+            <a href="mailto:chauhanp2905@gmail.com?subject=Backend" class = "apply" target="_blank">Apply</a>
+            <h3 class="job-role">Backend Developer</h3>
+            <div class="location">Remote</div>
+        </div>
+        <div>
+            <a href="mailto:chauhanp2905@gmail.com?subject=Data" class = "apply" target="_blank">Apply</a>
+            <h3 class="job-role">Data Scientist</h3>
+            <div class="location">Mumbai, India</div>
+        </div> -->
+    </div>
+
+    <div id="application">
+        <h2>Submit Your Application</h2>
+
+        <form id="application-form" action="https://formbold.com/s/oY1Lw" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label> <br>
+                <input type="text" id="name" name="Full Name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="mail" id="email" name="Email Address" placeholder="abc@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="+91 9788XXXXXX"  required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date Of Birth</label><br>
+                <input type="date" id="dob" name="dob"  required>
+            </div>
+            <div class="form-group">
+                <label for="position">Position Applied for</label><br>
+                <select name="Position Applied" id="position">
+                    <option value="">Select Position</option>
+                    <option value="frontend developer">FrontEnd Developer</option>
+                    <option value="fullstack developer">Full Stack Developer</option>
+                    <option value="data scientist">Data Scientist</option>
+                    <option value="ml engineer">ML Engineer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="coverletter">Cover Letter</label><br>
+                <textarea name="coverletter" id="coverletter" rows="5" placeholder="Explain what makes you suitable for the job.."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="terms"> <input type="checkbox" id="terms" name="terms"> I agree to the terms and conditions</label><br>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Application">
+            </div>
+        </form>
+    </div>
+
+    <div id="footer">
+        <ul id="footer-links">
+            <li>
+                <a href="https://www.youtube.com/watch?v=dX8396ZmSPk" target="_blank">
+                    Courses
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=dX8396ZmSPk" target="_blank">
+                    Programs
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=dX8396ZmSPk" target="_blank">
+                    YouTube
+                </a>
+            </li>
+
+        </ul>
+        <div class="copy_right">© 2024 Jovian</div>
+    </div>
+
+
+</body>
+
+</html>
+
